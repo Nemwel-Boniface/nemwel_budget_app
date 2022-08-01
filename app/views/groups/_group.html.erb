@@ -6,7 +6,9 @@
 
   <p>
     <strong>Icon:</strong>
-    <%= group.icon %>
+    <% if group.icon.attached? %>
+      <img src="<%=(url_for(group.icon))%>">
+    <% end %>
   </p>
 
 </div>
