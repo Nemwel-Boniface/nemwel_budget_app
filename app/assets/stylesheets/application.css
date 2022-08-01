@@ -48,3 +48,10 @@
   text-decoration: none;
   font-size: 24px;
 }
+
+/* The botton green btns */
+
+.green {
+  color: #fff;
+  background-color: #5fb523;
+}
