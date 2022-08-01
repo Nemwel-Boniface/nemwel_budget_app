@@ -14,37 +14,37 @@
  *= require_self
  */
 
- .blued {
-  background-color: #377Bc2;
+.blued {
+  background-color: #377bc2;
   height: 100vh;
- }
+}
 
- .homePage h1 {
+.homePage h1 {
   font-family: 'Ubuntu Condensed', sans-serif;
   color: #fff;
   font-size: 50px;
- }
+}
 
- .homebtn {
-  color: #377Bc2;
+.homebtn {
+  color: #377bc2;
   background-color: #fff;
   padding: 10px;
   width: 120px;
- }
+}
 
- /* Project header */
+/* Project header */
 
- .header {
-  background-color: #377Bc2;
+.header {
+  background-color: #377bc2;
   top: 0;
   left: 0;
   padding: 10px;
   width: 100%;
   color: #fff;
- }
+}
 
- .header a {
+.header a {
   color: #fff;
   text-decoration: none;
   font-size: 24px;
- }
+}
