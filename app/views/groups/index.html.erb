@@ -1,6 +1,10 @@
-<p style="color: green"><%= notice %></p>
+<div class="header pt-3 d-flex justify-content-around">
+  <%= link_to "", root_path, class: " d-inline-block pr-5" %>
+  <h3 class="text-center d-inline-block">Categories</h3>
+  <%= link_to "Log out", destroy_user_session_path, class: "fa fa-sign-out d-inline-block pr-5" %>
+</div>
 
-<h1>Groups</h1>
+<p style="color: green"><%= notice %></p>
 
 <div id="groups">
   <% @groups.each do |group| %>
