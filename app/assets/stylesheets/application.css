@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+ .blued {
+  background-color: #377Bc2;
+  height: 100vh;
+ }
+
+ .homePage h1 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: #fff;
+  font-size: 50px;
+ }
+
+ .homebtn {
+  color: #377Bc2;
+  background-color: #fff;
+  padding: 10px;
+  width: 120px;
+ }

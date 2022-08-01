@@ -1,1 +1,14 @@
-<h1>This is our about page! </h1>
+<div class="homePage blued pt-5">
+  <h1 class="text-center">My Pesa <i class="fa fa-money" aria-hidden="true"></i>
+</h1>
+
+  <div class="text-center fixed-bottom pb-5">
+    <div class="d-inline-block">
+      <%= link_to "sign in", user_session_path, class: "fa fa-sign-in homebtn"  %>
+      <p>
+    </div>
+    <div class="d-inline-block">
+      <%= link_to "sign Up", new_user_registration_path, class: "fa fa-user-plus homebtn" %>
+    </div>
+  </div>
+</div>
