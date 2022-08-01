@@ -19,8 +19,8 @@
           <%= f.password_field :password, autocomplete: "current-password" %>
         </div>
 
-        <div class="pt-3">
-          <div class="col-sm d-inline-block">
+        <div class="pt-3 d-flex justify-content-between"">
+          <div class=" ">
             <% if devise_mapping.rememberable? %>
               <div class="field">
                 <%= f.check_box :remember_me %>
@@ -33,7 +33,7 @@
             </div>
           </div>
 
-          <div class="d-inline-block pt-2">
+          <div class="pt-2">
             <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
               <%= link_to "Sign up", new_registration_path(resource_name) %><br />
             <% end %>
