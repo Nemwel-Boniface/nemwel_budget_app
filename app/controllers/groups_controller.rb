@@ -7,7 +7,9 @@ class GroupsController < ApplicationController
   end
 
   # GET /groups/1 or /groups/1.json
-  def show; end
+  def show
+    @entities = Entity.all
+  end
 
   # GET /groups/new
   def new
