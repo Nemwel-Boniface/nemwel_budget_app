@@ -1,48 +1,48 @@
 <div class="header pt-3 d-flex justify-content-around">
   <%= link_to "", groups_path, class: "fa fa-arrow-left d-inline-block pr-5" %>
-  <h3 class="text-center d-inline-block">Categories</h3>
+  <h3 class="text-center d-inline-block">New transaction </h3>
   <%= link_to "Log out", destroy_user_session_path, class: "fa fa-sign-out d-inline-block pr-5" %>
 </div>
-
-<h2 class="text-center pt-5">Let's create a new expense category</h2>
 
 <div class="container h-100 pt-5">
   <div class="row h-100 justify-content-center align-items-center">
     <div class="col-10 col-md-8 col-lg-6">
-      <%= form_with(model: @group) do |form| %>
-        <% if @group.errors.any? %>
+      <%= form_with(model: @entity) do |form| %>
+        <% if @entity.errors.any? %>
           <div style="color: red">
-            <h2><%= pluralize(@group.errors.count, "error") %> prohibited this group from being saved:</h2>
+            <h2><%= pluralize(@entity.errors.count, "error") %> prohibited this entity from being saved:</h2>
 
             <ul>
-              <% @group.errors.each do |error| %>
-              <li><%= error.full_message %></li>
+              <% @entity.errors.each do |error| %>
+                <li><%= error.full_message %></li>
               <% end %>
             </ul>
-         </div>
+          </div>
         <% end %>
 
         <div class="pt-3">
           <%= form.label :name, style: "display: block" %>
           <%= form.text_field :name %>
         </div>
-
+  
         <div class="pt-3">
-          <%= form.label :icon, style: "display: block" %>
-          <%= form.file_field :icon, class: "pt-1" %>
+          <%= form.label :amount, style: "display: block" %>
+          <%= form.number_field :amount %>
         </div>
 
         <div>
-          <%= form.number_field :user_id, id: :group_user_id, value: current_user.id, type: :hidden %>
+          <%= form.number_field :user_id, id: :entity_user_id, value: current_user.id, type: :hidden %>
         </div>
 
-        <div class="pt-4">
+        <div class="pt-3">
+          <%= form.label :group_id, "Group ID" %><br />
+           <%= form.number_field :group_id %>
+        </div>
+
+        <div class="pt-3">
           <%= form.submit "submit", class: "btn btn-primary" %>
         </div>
       <% end %>
     </div>
   </div>
- </div> 
-
-<br>
-
+</div>

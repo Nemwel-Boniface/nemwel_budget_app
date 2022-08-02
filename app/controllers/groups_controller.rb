@@ -7,7 +7,9 @@ class GroupsController < ApplicationController
   end
 
   # GET /groups/1 or /groups/1.json
-  def show; end
+  def show
+    @entities = Entity.all
+  end
 
   # GET /groups/new
   def new
@@ -19,11 +21,11 @@ class GroupsController < ApplicationController
 
   # POST /groups or /groups.json
   def create
-    @group = Group.new(group_params)
+    @group = Group.new(params.require(:group).permit(:name, :icon, :user_id))
 
     respond_to do |format|
       if @group.save
-        format.html { redirect_to group_url(@group), notice: 'Group was successfully created.' }
+        format.html { redirect_to groups_url, notice: 'Group was successfully created.' }
         format.json { render :show, status: :created, location: @group }
       else
         format.html { render :new, status: :unprocessable_entity }
