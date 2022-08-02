@@ -1,6 +1,12 @@
+<div class="header pt-3 d-flex justify-content-around">
+  <%= link_to "", groups_path, class: "fa fa-arrow-left d-inline-block pr-5" %>
+  <h3 class="text-center d-inline-block"> <%= @group.name %> </h3>
+  <%= link_to "Log out", destroy_user_session_path, class: "fa fa-sign-out d-inline-block pr-5" %>
+</div>
+
 <p style="color: green"><%= notice %></p>
 
-<%= render @group %>
+
 
 <div>
   <%= link_to "Edit this group", edit_group_path(@group) %> |
