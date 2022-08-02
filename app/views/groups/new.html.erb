@@ -32,6 +32,10 @@
           <%= form.file_field :icon, class: "pt-1" %>
         </div>
 
+        <div>
+          <%= form.number_field :user_id, id: :group_user_id, value: current_user.id, type: :hidden %>
+        </div>
+
         <div class="pt-4">
           <%= form.submit "submit", class: "btn btn-primary" %>
         </div>
