@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :entities
   authenticated :user do
     root to: 'groups#index', as: :authenticated_root
   end
