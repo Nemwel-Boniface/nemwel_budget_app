@@ -22,8 +22,8 @@
                 <% end %>
               </div>
               <div class="d-flex justify-content-between flex-column my-auto">
-                <strong>By: </strong>
                 <%= link_to group.name, group %>
+                 $ <%= group.entities.sum(:amount) %> 
               </div>
             </div>
              
