@@ -9,12 +9,12 @@ Enjoy!
 ## Screenshots
 
 <div>
-  ![screenshot](./images/home.png "Home Page")
-  ![screenshot](./images/signin.png "Sign in Page")
-  ![screenshot](./images/signup.png "sign up Page")
-  ![screenshot](./images/emptygroup.png "emptygroup Page")
-  ![screenshot](./images/detailedgroup.png "detailedgroup Page")
-  ![screenshot](./images/emptyentity.png "emptyentity Page")
+  ![screenshot](./images/home.png)
+  ![screenshot](./images/signin.png)
+  ![screenshot](./images/signup.png)
+  ![screenshot](./images/emptygroup.png)
+  ![screenshot](./images/detailedgroup.png)
+  ![screenshot](./images/emptyentity.png)
 </div>
 
 # Built With
