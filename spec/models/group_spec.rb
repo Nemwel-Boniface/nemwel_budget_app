@@ -11,6 +11,10 @@ RSpec.describe Group, type: :model do
   end
   before { subject.save }
 
+  it 'subject should be valid' do
+    expect(subject).to_not be_valid
+  end
+
   describe 'validate data' do
     it 'it should have a name' do
       subject.name = nil
