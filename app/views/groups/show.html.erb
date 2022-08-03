@@ -4,6 +4,10 @@
   <%= link_to "Log out", destroy_user_session_path, class: "fa fa-sign-out d-inline-block pr-5" %>
 </div>
 
+<div class="text-center my-5">
+  <h1> <%= @group.name %> $ <%= @group.entities.sum(:amount) %> </h1>
+</div>
+
 <p style="color: green"><%= notice %></p>
 
 <% if  %>
@@ -12,7 +16,7 @@
   <div class="cont">
     <% if @entities.empty? %>
       <div>
-        <h2 class="text-center mt-5 px-3">There are no transactions yet!</h2>
+        <h2 class="text-center my-5 px-3">There are no <%= @group.name %>s yet!</h2>
       </div>
     <% else %>
      <% @entities.each do |entity| %>
@@ -32,5 +36,6 @@
 
 
 <% end %>
-
-<%= link_to "New Transaction", new_entity_path, class: "green btn btn-block fixed-bottom" %>
+<div class="greenBtn">
+  <p class="green"><%= link_to "New Transaction", new_entity_path, class: "mt-4 btn btn-block btn-success fixed-bottom" %></p>
+</div>

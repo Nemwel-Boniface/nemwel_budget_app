@@ -1,4 +1,3 @@
-
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
@@ -6,7 +5,7 @@ RSpec.describe User, type: :model do
   it 'name should be present' do
     expect(@person).to_not be_valid
 
-    @person.name = "Nemwel"
+    @person.name = 'Nemwel'
     expect(@person).to be_valid
   end
 

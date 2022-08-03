@@ -51,7 +51,18 @@
 
 /* The botton green btns */
 
-.green {
+.greenBtn p {
   color: #fff;
   background-color: #5fb523;
+}
+
+.groupCont {
+  max-height: 150px;
+  width: 100%;
+}
+
+.groupImg img {
+  max-width: 100%;
+  width: 200px;
+  object-fit: contain;
 }

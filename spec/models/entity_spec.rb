@@ -4,7 +4,7 @@ describe Entity, type: :model do
   subject do
     @person = User.new(password: 'nemwel123', email: 'nemwel@gmail.com')
     @grp = Group.new(name: 'test', user_id: @person)
-    @entitty = Entity.new(name: "fruits", amount: 20, user_id: @person, group_id: @grp)
+    @entitty = Entity.new(name: 'fruits', amount: 20, user_id: @person, group_id: @grp)
   end
 
   before { subject.save }

@@ -10,13 +10,13 @@
   <div class="cont">
     <% if @groups.empty? %>
       <div>
-        <h2>There are no groups yet!</h2>
+        <h2 class="text-center my-5">There are no groups yet!</h2>
       </div>
     <% else %>
-      <div>
+      <div class="px-4">
         <% @groups.each do |group| %>
-            <div style="height: 100%;" class="mt-3 mb-3 border border-dark p-1 container d-flex justify-content-around">
-              <div class=" d-inline-block">
+            <div class="groupCont mt-3 mb-3 border border-dark p-1 container d-flex justify-content-around">
+              <div class="groupImg d-inline-block">
                 <% if group.icon.attached? %>
                   <img src="<%=(url_for(group.icon))%>" class="img-fluid pr-1">
                 <% end %>
@@ -32,4 +32,4 @@
   </div>
 </div>
 
-<%= link_to "New group", new_group_path, class: "green btn btn-block fixed-bottom" %>
+<%= link_to "New group", new_group_path, class: "mt-4 green btn btn-block btn-success fixed-bottom" %>
