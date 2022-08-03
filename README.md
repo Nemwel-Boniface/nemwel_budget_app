@@ -21,7 +21,7 @@ Enjoy!
  - CSS3
 
 # Live Demo
-(none at the moment)
+View live demo [here:](https://my-pesa.herokuapp.com/)
 
 # Video Presentation
 View demo video [here:](https://drive.google.com/file/d/1RyQfBz5vx7rtqpgpJrj9l7jH1wJcgo8a/view?usp=sharing)
