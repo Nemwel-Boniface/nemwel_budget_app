@@ -21,7 +21,7 @@
                   <img src="<%=(url_for(group.icon))%>" class="img-fluid pr-1">
                 <% end %>
               </div>
-              <div class="d-flex justify-content-between flex-column my-auto">
+              <div class="mx-2 d-flex justify-content-between flex-column my-auto">
                 <%= link_to group.name, group %>
                  $ <%= group.entities.sum(:amount) %> 
               </div>
