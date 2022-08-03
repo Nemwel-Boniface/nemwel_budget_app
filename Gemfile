@@ -34,6 +34,8 @@ gem 'turbo-rails'
 
 gem 'rubocop'
 
+gem 'rubocop-discourse', '~> 2.5'
+
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem 'stimulus-rails'
 
