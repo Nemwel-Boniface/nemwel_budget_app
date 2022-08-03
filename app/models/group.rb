@@ -1,3 +1,4 @@
+# Service to download ftp file from the server
 class Group < ApplicationRecord
   has_one_attached :icon
   belongs_to :user

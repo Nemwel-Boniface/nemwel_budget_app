@@ -1,3 +1,4 @@
+# Service to download ftp file from the server
 Rails.application.routes.draw do
   resources :entities
   authenticated :user do
@@ -8,5 +9,5 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  root "about#index"
+  root 'about#index'
 end

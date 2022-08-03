@@ -1,3 +1,4 @@
+# Service to download ftp file from the server
 class EntitiesController < ApplicationController
   before_action :set_entity, only: %i[show edit update destroy]
 

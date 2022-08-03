@@ -1,3 +1,4 @@
+# Service to download ftp file from the server
 class Entity < ApplicationRecord
   belongs_to :user
   has_many :groups

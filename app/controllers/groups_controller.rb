@@ -1,3 +1,4 @@
+# Service to download ftp file from the server
 class GroupsController < ApplicationController
   before_action :set_group, only: %i[show edit update destroy]
 

@@ -1,3 +1,4 @@
+# Service to download ftp file from the server
 class Ability
   include CanCan::Ability
 
