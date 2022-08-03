@@ -8,14 +8,12 @@ Enjoy!
 
 ## Screenshots
 
-<div>
-  ![screenshot](./images/home.png)
-  ![screenshot](./images/signin.png)
-  ![screenshot](./images/signup.png)
-  ![screenshot](./images/emptygroup.png)
-  ![screenshot](./images/detailedgroup.png)
-  ![screenshot](./images/emptyentity.png)
-</div>
+![screenshot](./images/home.png)
+![screenshot](./images/signin.png)
+![screenshot](./images/signup.png)
+![screenshot](./images/emptygroup.png)
+![screenshot](./images/detailedgroup.png)
+![screenshot](./images/emptyentity.png)
 
 # Built With
  - Ruby on Rails
