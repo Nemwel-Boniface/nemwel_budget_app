@@ -1,0 +1,68 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.blued {
+  background-color: #377bc2;
+  height: 100vh;
+}
+
+.homePage h1 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: #fff;
+  font-size: 50px;
+}
+
+.homebtn {
+  color: #377bc2;
+  background-color: #fff;
+  padding: 10px;
+  width: 120px;
+}
+
+/* Project header */
+
+.header {
+  background-color: #377bc2;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/* The botton green btns */
+
+.greenBtn p {
+  color: #fff;
+  background-color: #5fb523;
+}
+
+.groupCont {
+  max-height: 150px;
+  width: 100%;
+}
+
+.groupImg img {
+  max-width: 100%;
+  width: 200px;
+  object-fit: contain;
+}

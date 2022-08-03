@@ -1,0 +1,35 @@
+<div class="header pt-3 d-flex justify-content-around">
+  <%= link_to "", root_path, class: " d-inline-block pr-5" %>
+  <h3 class="text-center d-inline-block">Categories</h3>
+  <%= link_to "Log out", destroy_user_session_path, class: "fa fa-sign-out d-inline-block pr-5" %>
+</div>
+
+<p style="color: green"><%= notice %></p>
+
+<div id="groups" class="container">
+  <div class="cont">
+    <% if @groups.empty? %>
+      <div>
+        <h2 class="text-center my-5">There are no groups yet!</h2>
+      </div>
+    <% else %>
+      <div class="px-4">
+        <% @groups.each do |group| %>
+            <div class="groupCont mt-3 mb-3 border border-dark p-1 container d-flex justify-content-around">
+              <div class="groupImg d-inline-block">
+                <% if group.icon.attached? %>
+                  <img src="<%=(url_for(group.icon))%>" class="img-fluid pr-1">
+                <% end %>
+              </div>
+              <div class="mx-2 d-flex justify-content-between flex-column my-auto">
+                <%= link_to group.name, group %>
+                 $ <%= group.entities.sum(:amount) %> 
+              </div>
+            </div>
+             
+        <% end %>
+    <% end %>
+  </div>
+</div>
+
+<%= link_to "New group", new_group_path, class: "mt-4 green btn btn-block btn-success fixed-bottom" %>
